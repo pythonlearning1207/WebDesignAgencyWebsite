@@ -53,21 +53,16 @@
 
 @media (min-width: 767px) and (max-width:1001px) {
     .container {
-        display: grid;
+        display: block;
         margin: 30px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 30px 100px 200px;
-        gap: 30px;
     }
     .box {
-        /*background-color: green;
-        height: 50px;
+        /*background-color: green;*/
+        height: 20px;
         width: 50px;
-        */
         position: relative;
     }
     .first {
-        grid-column: span 2;
         width: 100px;
         top: 30px;
     }
@@ -76,26 +71,31 @@
     }
     .second {
         top: 40px;
-        grid-column: span 2;
         width: 700px;
-        height: 250px;
+        height: 200px;
     }
     .third, .forth {
-        grid-column: span 2;
-        top: 250px;
+        top: 100px;
         width: 100%;
-        height: 400px;
+        height: 200px;
     }
     .tile-image {
         float: left;
         margin-right: 5%;
     }
     footer {
-        position: fixed;
+        position: absolute;
+        height: 100px;
+        width: 100%;
+        /*background-color: red;*/
         bottom: 0;
         right: 0;
-        margin-right: 10px;
     }        
+    footer > p {
+        position: absolute;
+        bottom: 0px;
+        right: 10px;
+    }
 }
 
 @media (max-width: 766px) {
